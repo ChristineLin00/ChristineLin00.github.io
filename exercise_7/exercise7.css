@@ -1,31 +1,36 @@
 body{
   background-color: rgb(78, 71, 71);
 }
+
 .center {
   text-align: center;
   font-family:monospace;
   color: ivory;
   font-size:x-large;
 }
+
 .start {
   margin-top: 50px;
 }
+
 .door {
-  width: 800px;
-  margin-left: 100px;
-  margin-top: 50px;
+  margin: 100px auto;
 }
+
 .door_position {
   width: 200px;
   display: inline-block;
 }
+
 p {
   line-height: 25px;
 }
+
 a:link, a:visited {
   color: rgb(202, 154, 31);
   text-decoration: underline;
 }
+
 a:hover, a:active {
   color: rgb(228, 76, 21);
 }
