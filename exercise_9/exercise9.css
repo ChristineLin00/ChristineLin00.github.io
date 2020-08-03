@@ -3,25 +3,25 @@ body {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
 }
 
-.Question {
+.question {
   padding: 15px;
   margin: 0px 250px 0px 0px;
   background-color: rgb(255, 130, 85);
   border-radius: 10px;
 }
 
-.Question_box {
+.question_box {
   margin: 10px 100px auto 100px;
 }
 
-.Question_ans {
+.question_ans {
   margin: 30px;
 }
-.text_center{
+.text_center {
   text-align: center;
 }
 
-#Q_form {
+#q_form {
   padding-top: 20px;
 }
 
