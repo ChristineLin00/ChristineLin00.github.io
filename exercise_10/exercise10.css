@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(245, 231, 212);
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+}
+
+#title{
+  text-align: center;
+  font-size: larger;
+  border: 1px dotted rgb(6, 109, 6);
+}
+
+#q_form {
+  padding-top: 20px;
+}
+
+fieldset {
+  border: 1px solid rgb(10, 83, 32);
+}
+
+legend {
+  padding: 10px;
+}
+
+.question {
+  padding: 10px;
+  margin: 20px 250px 20px 30px;
+  background-color: rgb(255, 130, 85);
+  border-radius: 10px;
+}
+
+.question_ans {
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+.text_ans {
+  color: gray;
+}
+
+#other_q2 {
+  inline-size: 100px;
+  block-size: 50px;
+}
+
+#button_div {
+  text-align: right;
+  margin: 20px auto;
+}
+
+#button {
+  padding: 10px 20px;
+  font-size: 15px;
+}

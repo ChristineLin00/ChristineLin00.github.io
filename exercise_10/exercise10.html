@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="author" content="Christine Lin">
+  <meta name="description" content="Hi,this is created by Christine">
+  <title>This is Ex10|I am Christine</title>
+  <link rel="stylesheet" href="./exercise10.css">
+</head>
+
+<body>
+  <div style="margin:20px 60px">
+    <div id="title">
+      <h1>My questions?</h1>
+    </div>
+    <form id="q_form">
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <!-- question1 -->
+        <div class="question">1. What's your name and email ?</div>
+        <div class="question_ans">
+          <input class="text_ans" id="myname" name="myname" type="text" value="Input your name">
+          <br><br>
+          <input class="text_ans" id="email" name="email" type="email" value="Input your email">
+        </div>
+        <!-- question2 -->
+        <div class="question">2. What's your gender ?</div>
+        <div class="question_ans">
+          <label for="q2_1">
+            <input id="q2_1" name="q2" type="radio" value="Male"> Male
+          </label>
+          <br><br>
+          <label for="q2_2">
+            <input id="q2_2" name="q2" type="radio" value="Female"> Female
+          </label>
+          <br><br>
+          <label for="q2_3">
+            <input id="q2_3" name="q2" type="radio" value="other"> other
+          </label>
+        </div>
+        <!-- question3 -->
+        <div class="question">3. What's your age ?</div>
+        <div class="question_ans">
+          <input list="age" name="age" value="0-10">
+          <datalist id="age">
+            <option value="0-10">
+            <option value="11-20">
+            <option value="20-30">
+            <option value="31-40">
+            <option value="41-50">
+            <option value="51-60">
+            <option value=">61">
+          </datalist>
+        </div>
+      </fieldset>
+
+      <!-- other question -->
+      <fieldset>
+        <legend>other question</legend>
+        <!-- question1 -->
+        <div class="question">1. How do you get around ?</div>
+        <div class="question_ans">
+          <label for="other_q1_1">
+            <input id="other_q1_1" name="other_q1_1" type="checkbox" value="MRT"> MRT
+          </label>
+          <br><br>
+          <label for="other_q1_2">
+            <input id="other_q1_2" name="other_q1_2" type="checkbox" value="Bus"> Bus
+          </label>
+          <br><br>
+          <label for="other_q1_3">
+            <input id="other_q1_3" name="other_q1_3" type="checkbox" value="Bike"> Bike
+          </label>
+          <br><br>
+          <label for="other_q1_4">
+            <input id="other_q1_4" name="other_q1_4" type="checkbox" value="Feet"> Feet
+          </label>
+        </div>
+        <!-- question2 -->
+        <div class="question">2. What's your favorite color ?</div>
+        <div class="question_ans">
+          <input id="other_q2" type="color">
+        </div>
+        <!-- question3 -->
+        <div class="question">3. Write something about you ?</div>
+        <div class="question_ans">
+          <textarea class="text_ans" id="other_q3" rows="10" cols="50"> lazy.
+          </textarea>
+        </div>
+      </fieldset>
+      <div id="button_div">
+        <input id="button" type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
