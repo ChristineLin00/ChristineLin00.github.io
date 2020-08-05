@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="author" content="Christine Lin">
+    <meta name="description" content="Hi,this is created by Christine">
+    <title>This is Ex11|I am Christine</title>
+    <style>
+      .text_center {
+        text-align: center;
+      }
+
+      .div1 {
+        z-index: 1;
+        opacity: 0.5;
+        width: 110px;
+        height: 120px;
+      }
+
+      .div2 {
+        z-index: 2;
+        width: 110px;
+        height: 120px;
+      }
+
+      .g_container {
+        position: relative;
+        display: inline-block;
+        margin: 80px;
+      }
+
+      .g_cover {
+        position: absolute;
+      }
+
+      .g_red {
+        display: inline-block;
+        width: 545px;
+        height: 120px;
+        background-image: url("./img/red.png");
+        background-color: #f00;
+      }
+
+      .g_black {
+        display: inline-block;
+        width: 545px;
+        height: 120px;
+        background-image: url("img/black.png");
+        background-color: black;
+      }
+
+      a:link, a:visited {
+        color: rgb(175, 63, 19);
+        font-size: x-large;
+        padding: 20px;
+        text-decoration: underline;
+      }
+
+      a:hover, a:active {
+        color: rgb(187, 128, 113);
+      }
+    </style>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 class="text_center">Red or Black?</h1>
+    <h3 class="text_center">Please help classify the cards below.</h3>
+    <div style="text-align: center;">
+      <div class="g_container">
+        <div class="g_cover">
+          <img class="div1" id="drag1_1" src="./img/card1.png">
+        </div>
+        <div class="g_cover">
+          <img class="div2" id="drag1_2" src="./img/card1.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div class="g_container">
+        <div class="g_cover">
+          <img class="div1" id="drag2_1" src="./img/card2.png">
+        </div>
+        <div class="g_cover">
+          <img class="div2" id="drag2_2" src="./img/card2.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div class="g_container">
+        <div class="g_cover">
+          <img class="div1" id="drag3_1" src="./img/card3.png">
+        </div>
+        <div class="g_cover">
+          <img class="div2" id="drag3_2" src="./img/card3.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div class="g_container">
+        <div class="g_cover">
+          <img class="div1" id="drag4_1" src="./img/card4.png">
+        </div>
+        <div class="g_cover">
+          <img class="div2" id="drag4_2" src="./img/card4.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div class="g_container">
+        <div class="g_cover">
+          <img class="div1" id="drag5_1" src="./img/card5.png">
+        </div>
+        <div class="g_cover">
+          <img class="div2" id="drag5_2" src="./img/card5.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div class="g_container">
+        <div class="g_cover">
+          <img class="div1" id="drag6_1" src="./img/card6.png">
+        </div>
+        <div class="g_cover">
+          <img class="div2" id="drag6_2" src="./img/card6.png" draggable="true" ondragstart="drag(event)">
+        </div>
+      </div>
+      <div style="margin: 100px auto;">
+          <div class="g_red" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="g_black" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <a href="./exercise11.html">Reset</a>
+    </div>
+  </body>
+
+</html>
