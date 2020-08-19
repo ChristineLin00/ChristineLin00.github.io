@@ -1,17 +1,24 @@
 table, th, td {
   border: 1.5px solid black;
   border-collapse: collapse;
-  padding: 20px;
+  padding: 0 5px;
   text-align: center;
   font-family: sans-serif;
 }
 
-textarea {
-  border: 2px solid powderblue;
-  display: none;
+table th, table td {
+  height: 32px;
 }
 
-#table1 td:hover textarea {
+input {
+  border: 2px solid transparent;
+  min-height: 20px;
+  width: 98%;
+  display: inline-block;
+}
+
+#table1 td:hover input {
+  border: 2px solid powderblue;
   display: inline-block;
 }
 
@@ -33,6 +40,7 @@ textarea {
   height: 24px;
   min-width: 26px;
 }
+
 .set-width {
   width: 65%;
 }
