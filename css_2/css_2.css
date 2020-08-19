@@ -1,0 +1,62 @@
+table, th, td {
+  border: 1.5px solid black;
+  border-collapse: collapse;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+textarea {
+  border: 2px solid powderblue;
+  display: none;
+}
+
+#table1 td:hover textarea {
+  display: inline-block;
+}
+
+#table2 td:hover {
+  background-color: rgb(80, 177, 80);
+  color: rgb(233, 18, 18);
+  font-weight: bolder;
+}
+
+#colormap {
+  border: 0 solid black;
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+#colormap td {
+  border: 1px solid black;
+  padding: 2px;
+  height: 24px;
+  min-width: 26px;
+}
+.set-width {
+  width: 65%;
+}
+
+.set-margin {
+  margin: 50px auto;
+}
+
+#button {
+  padding: 5px 10px;
+  margin-left: 50px;
+  background-color: rgb(241, 100, 85);
+  color: rgb(233, 227, 227);
+  font-weight: bolder;
+}
+
+a:link, a:visited {
+  color: rgb(236, 114, 13);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  padding: 20px;
+}
+
+a:hover, a:active {
+  color: rgb(173, 52, 22);
+}
