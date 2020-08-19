@@ -6,31 +6,16 @@
     <meta name="author" content="Christine Lin">
     <meta name="keywords" content="UI_Train">
     <meta name="description" content="Hi,this is created by Christine">
-    <title>Christine HW3</title>
-    <style>
-      table, th, td {
-        border: 1.5px solid black;
-        border-collapse: collapse;
-        padding: 20px;
-        text-align: center;
-        font-family: sans-serif;
-      }
-      table#colormap {
-        border: 0px solid black;
-        border-collapse: separate;
-        border-spacing: 1px;
-      }
-      table#colormap td {
-        border: 1px solid black;
-        padding: 2px;
-        height: 24px;
-        min-width: 26px;
-      }
-    </style>
+    <link rel="stylesheet" href="./css_2.css">
+    <title>This is Css2|I am Christine</title>
   </head>
   <body>
+    <nav style="text-align: right;"> |
+      <a href="../index.html">Home</a> |
+      <a href="https://github.com/ChristineLin00/ChristineLin00.github.io">github</a> |
+    </nav>
     <!-- table 1 -->
-    <table style="width: 65%;">
+    <table class="set-width set-margin" id="table1" align="center">
       <tr>
         <th rowspan="2"></th>
         <th colspan="2"></th>
@@ -42,9 +27,15 @@
         <td></td>
       </tr>
       <tr>
-        <td colspan="2"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2">
+          <textarea rows="2" cols="40"></textarea>
+        </td>
+        <td>
+          <textarea rows="2" cols="20"></textarea>
+        </td>
+        <td>
+          <textarea rows="2" cols="20"></textarea>
+        </td>
       </tr>
       <tr>
         <td></td>
@@ -52,13 +43,9 @@
         <td colspan="2"></td>
       </tr>
     </table>
-
-    <br style="line-height: 200px;">
     <hr>
-    <br style="line-height: 200px;">
-
     <!-- table2 -->
-    <table style="width: 65%;">
+    <table class="set-width set-margin" id="table2" align="center">
       <tr>
         <th colspan="2" rowspan="2">交叉分析表</th>
         <th colspan="2">ID</th>
@@ -79,13 +66,9 @@
         <td>8966</td>
       </tr>
     </table>
-
-    <br style="line-height: 200px;">
     <hr>
-    <br style="line-height: 200px;">
-
     <!-- table 3 -->
-    <table id="colormap">
+    <table class="set-margin" id="colormap" align="center">
       <tr>
         <td style="background-color: #330000;" title="#330000"></td>
         <td style="background-color: #331900;" title="#331900"></td>
@@ -222,5 +205,6 @@
         <td style="background-color: #FFFFFF;" title="#FFFFFF"></td>
       </tr>
     </table>
+    <input id="button" type="submit" value="&lt Home" onclick="location.href='../index.html'">
   </body>
 </html>
