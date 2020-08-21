@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+
+body {
+  font-family: 'Noto Sans TC';
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: rgb(170, 163, 163);
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(4) span{
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 0 2px;
+  background-color: greenyellow;
+}
+
+tr:nth-child(7) span{
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 0 2px;
+  background-color: rgb(172, 175, 167);
+}
