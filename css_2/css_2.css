@@ -55,6 +55,13 @@ input {
   background-color: rgb(241, 100, 85);
   color: rgb(233, 227, 227);
   font-weight: bolder;
+  max-width: 100px;
+  height: 50px;
+}
+
+#button:hover {
+  background-color: rgb(230, 73, 17);
+  cursor: pointer;
 }
 
 a:link, a:visited {

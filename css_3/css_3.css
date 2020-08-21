@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+
+body {
+  font-family: 'Noto Sans TC';
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: darkgrey;
+  width: 5%;
+}
+
+tr:nth-child(3n+0) {
+  background-color: rgb(240, 218, 247);
+}
+
+tr:nth-child(3n+1) {
+  background-color: rgb(220, 250, 224);
+}
+
+tr:nth-child(3n+2) {
+  background-color: rgb(250, 226, 230);
+}
+
+tr.red-strong td:nth-child(2){
+  color: red;
+}
+
+td dfn{
+  text-decoration: underline;
+}
