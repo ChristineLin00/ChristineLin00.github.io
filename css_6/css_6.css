@@ -50,6 +50,10 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: none;
+}
+
 .value:hover {
   background-color: #44a2d8;
   color: white;
