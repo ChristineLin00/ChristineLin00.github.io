@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+
+html {
+  font-family: 'Noto Sans TC';
+  font-size: 62.5%;
+  background-color: rgb(217, 231, 252);
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.conatainer {
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+.signin-conatainer{
+  border: 1px solid rgb(211, 186, 186);
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns:auto auto;
+  background-color: rgb(245, 234, 234);
+}
+
+.sign-box {
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sign-info {
+  padding: 5px 10px;
+}
+
+#sign-in {
+  border-bottom: 2px solid cornflowerblue;
+}
+
+#register {
+  background-color: rgb(243, 199, 142);
+  border: 1px solid rgb(211, 186, 186);
+}
+
+.input-info {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.input-info input {
+  border: 1px solid rgb(202, 196, 196);
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  text-indent: 20px;
+  color: gray;
+}
+
+i {
+  margin: 6px;
+  position: absolute;
+  right: 0;
+}
+
+div p {
+  margin-bottom: 2px;
+}
+
+label ~ span {
+  float: right;
+  color: rgb(34, 34, 241);
+}
+
+button {
+  border: 1px solid green;
+  margin: 10px auto;
+  width: 100%;
+  height: 35px;
+  color: white;
+  background-color: rgb(35, 148, 35);
+  font-size: 15px;
+}
+
+button:active {
+  background-color: rgb(33, 102, 36);
+}
+
+label {
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"] ~ span {
+  padding-left: 5px;
+  color: rgb(29, 46, 21);
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  appearance: none;
+  transition-duration: 0.3s;
+  background-color: #42beaa;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  border: 1px solid rgb(189, 162, 162);
+  background-color: rgb(241, 59, 96);
+}
+
+input[type="checkbox"]:checked + span::before {
+  position: absolute;
+  left: 7px;
+  color: white;
+  content: '\2713';
+}
+
+#read:focus ,button:focus {
+  outline: none;
+}
+
+input, button {
+  border-radius: 4px;
+}
