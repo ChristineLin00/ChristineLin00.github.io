@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+
+html {
+  margin: 0px auto;
+  width: 80%;
+  font-family: 'Noto Sans TC';
+  font-size: 62.5%;
+  color: rgb(156, 151, 151);
+}
+
+.title-container{
+  display: flex;
+  align-items: flex-end;
+}
+
+.item-container {
+  padding: 20px 5px 10px 0;
+  font-size: large;
+  color: rgb(209, 206, 206);
+}
+
+.item-container p {
+  margin-top: 0;
+  font-size: xx-small;
+}
+
+h1 ,h3 {
+  border-bottom: 2px solid rgb(209, 206, 206);
+  margin-bottom: 0;
+  padding-right: 90px;
+}
+
+.item-container h1 {
+  color: rgb(212, 35, 35);
+  border-bottom: 2px solid rgb(212, 35, 35);
+}
+
+h1 ~ p {
+  color: rgb(212, 35, 35);
+}
+
+#info-tile {
+  padding-right: 10px;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.input-info {
+  margin: 20px 0;
+  float: left;
+  height: 50px;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.input-info span {
+  padding-right: 2px;
+  color: rgb(212, 35, 35);
+}
+
+input {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid rgb(209, 206, 206);
+  padding: 5px 0;
+  color: rgb(209, 206, 206);
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(212, 35, 35);
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid red;
+  padding: 5px 50px;
+  margin: 20px 100px;
+  font-weight: bold;
+  background-color: rgb(212, 35, 35);
+  color: #f1e3e3;
+  float: right;
+}
+
+button:focus {
+  outline: none;
+}
