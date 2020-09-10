@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+
+  <head lang="en">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christine Lin">
+    <meta name="keywords" content="UI_Train">
+    <meta name="description" content="Hi,this is created by Christine">
+    <link rel="stylesheet" href="./css_9.css">
+    <title>This is Css9|I am Christine</title>
+  </head>
+  <body>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
+
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <a class="navbar-brand" href="#">Showcase</a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <nav class="nav flex-column">
+            <div class="nav-link text-dark navbar-header font-weight-bold">Components</div>
+            <a class="nav-link text-secondary" href="./css_alerts.html">Alerts</a>
+            <a class="nav-link text-secondary" href="./css_badge.html">Badge</a>
+            <a class="nav-link text-secondary" href="./css_breadcrumb.html">Breadcrumb</a>
+            <a class="nav-link text-secondary" href="./css_button.html">Buttons</a>
+            <a class="nav-link text-secondary" href="./css_button_group.html">Button group</a>
+            <a class="nav-link text-secondary" href="./css_card.html">Card</a>
+            <a class="nav-link text-secondary" href="./css_carousel.html">Carousel</a>
+            <a class="nav-link text-secondary" href="./css_collapse.html">Collapse</a>
+            <a class="nav-link text-secondary" href="./css_dropdowns.html">Dropdowns</a>
+            <a class="nav-link text-secondary" href="./css_forms.html">Forms</a>
+            <a class="nav-link text-secondary" href="./css_input_group.html">Input group</a>
+            <a class="nav-link text-secondary" href="./css_jumbotron.html">Jumbotron</a>
+            <a class="nav-link text-secondary" href="./css_list_group.html">List group</a>
+            <a class="nav-link text-secondary" href="./css_model.html">Model</a>
+            <a class="nav-link text-secondary" href="./css_navs.html">Navs</a>
+            <a class="nav-link text-secondary" href="./css_navbar.html">Navbar</a>
+            <a class="nav-link text-secondary" href="./css_pagination.html">Pagination</a>
+            <a class="nav-link text-secondary" href="./css_popovers.html">Popovers</a>
+            <a class="nav-link text-secondary" href="./css_progress.html">Progress</a>
+            <a class="nav-link text-secondary" href="./css_scrollspy.html">Scrollspy</a>
+            <a class="nav-link active text-dark font-weight-bold" href="./css_spinners.html">Spinners</a>
+            <a class="nav-link text-secondary" href="./css_toasts.html">Toasts</a>
+            <a class="nav-link text-secondary" href="./css_tooltips.html">Tooltips</a>
+          </nav>
+        </div>
+        <div class="col-10">
+          <h1 class="mb-5"><b id="title">Spinner</b></h1>
+
+          <!-- Border spinner -->
+          <h3><b id="group_title">Border spinner</b></h3>
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+
+          <!-- Colors -->
+          <h3 class="mt-5"><b class="group_title">Colors</b></h3>
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-border text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-border text-success" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-border text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-border text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-border text-info" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-border text-light" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-border text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+
+          <!-- Growing spinner -->
+          <h3 class="mt-5"><b class="group_title">Growing spinner</b></h3>
+          <div class="spinner-grow" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-info" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-light" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+
+          <!-- Alignment -->
+          <h3 class="mt-5"><b class="group_title">Alignment</b></h3>
+          <div class="spinner-border m-5" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <strong>Loading...</strong>
+            <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+          </div>
+
+          <div class="clearfix">
+            <div class="spinner-border float-right" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+
+          <!-- Size -->
+          <h3 class="mt-5"><b class="group_title">Size</b></h3>
+          <div class="spinner-border spinner-border-sm" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow spinner-grow-sm" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+
+          <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+
+          <!-- Buttons -->
+          <h3 class="mt-5"><b class="group_title">Buttons</b></h3>
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="sr-only">Loading...</span>
+          </button>
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            <span class="sr-only">Loading...</span>
+          </button>
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -14,8 +14,29 @@
   <body>
     <script src="../node_modules/bootstrap/dist/js/holder.min.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
     <nav class="navbar navbar-dark bg-dark mb-3">
       <a class="navbar-brand" href="#">Showcase</a>
     </nav>
@@ -45,6 +66,8 @@
             <a class="nav-link text-secondary" href="./css_popovers.html">Popovers</a>
             <a class="nav-link text-secondary" href="./css_progress.html">Progress</a>
             <a class="nav-link text-secondary" href="./css_scrollspy.html">Scrollspy</a>
+            <a class="nav-link text-secondary" href="./css_spinners.html">Spinners</a>
+            <a class="nav-link text-secondary" href="./css_toasts.html">Toasts</a>
             <a class="nav-link text-secondary" href="./css_tooltips.html">Tooltips</a>
           </nav>
         </div>
@@ -70,6 +93,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
+
           <!-- Form controls -->
           <h3 class="mt-5"><b class="group_title">Form controls</b></h3>
           <form>
@@ -109,6 +133,7 @@
               <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
           </form>
+
           <!-- Sizing -->
           <h3 class="mt-5"><b class="group_title">Sizing</b></h3>
           <input class="form-control form-control-lg mb-3" type="text" placeholder=".form-control-lg">
@@ -124,9 +149,11 @@
           <select class="form-control form-control-sm">
             <option>Small select</option>
           </select>
+
           <!-- Readonly -->
           <h3 class="mt-5"><b class="group_title">Readonly</b></h3>
           <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+
           <!-- Readonly plain text -->
           <h3 class="mt-5"><b class="group_title">Readonly plain text</b></h3>
           <form class="mb-3">
@@ -155,6 +182,7 @@
             </div>
             <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
           </form>
+
           <!-- Checkboxes and radios -->
           <h3 class="mt-5"><b class="group_title">Checkboxes and radios</b></h3>
           <h5 class="mt-5"><b class="group_title">Default (stacked)</b></h5>
@@ -193,6 +221,7 @@
               Disabled radio
             </label>
           </div>
+
           <!-- Inline -->
           <h5 class="mt-5"><b class="group_title">Inline</b></h5>
           <div class="mb-3">
@@ -223,6 +252,7 @@
               <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
             </div>
           </div>
+
           <!-- Without labels -->
           <h5 class="mt-5"><b class="group_title">Without labels</b></h5>
           <div class="form-check">
@@ -232,6 +262,7 @@
             <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1"
               aria-label="...">
           </div>
+
           <!-- Form groups -->
           <h3 class="mt-5"><b class="group_title">Form groups</b></h3>
           <form>
@@ -244,6 +275,7 @@
               <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
             </div>
           </form>
+
           <!-- Form grid -->
           <h3 class="mt-5"><b class="group_title">Form grid</b></h3>
           <form>
@@ -256,6 +288,7 @@
               </div>
             </div>
           </form>
+
           <!-- Form row -->
           <h3 class="mt-5"><b class="group_title">Form row</b></h3>
           <form>
@@ -315,6 +348,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Sign in</button>
           </form>
+
           <!-- Horizontal form -->
           <h3 class="mt-5"><b class="group_title">Horizontal form</b></h3>
           <form>
@@ -488,6 +522,7 @@
               </div>
             </div>
           </form>
+
           <!-- Inline forms -->
           <h3 class="mt-5"><b class="group_title">Inline forms</b></h3>
           <form class="form-inline">
@@ -636,27 +671,6 @@
             <button class="btn btn-primary" type="submit">Submit form</button>
           </form>
 
-          <script>
-            // Example starter JavaScript for disabling form submissions if there are invalid fields
-            (function () {
-              'use strict';
-              window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                  form.addEventListener('submit', function (event) {
-                    if (form.checkValidity() === false) {
-                      event.preventDefault();
-                      event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-                  }, false);
-                });
-              }, false);
-            })();
-          </script>
-
           <!-- Browser defaults -->
           <h3 class="mt-5"><b class="group_title">Browser defaults</b></h3>
           <form>
@@ -704,6 +718,7 @@
             </div>
             <button class="btn btn-primary" type="submit">Submit form</button>
           </form>
+
           <!-- Server side -->
           <h3 class="mt-5"><b class="group_title">Server side</b></h3>
           <form>
@@ -774,6 +789,7 @@
             </div>
             <button class="btn btn-primary" type="submit">Submit form</button>
           </form>
+
           <!-- Supported elements -->
           <h3 class="mt-5"><b class="group_title">Supported elements</b></h3>
           <form class="was-validated">
@@ -809,6 +825,7 @@
               <div class="invalid-feedback">Example invalid custom file feedback</div>
             </div>
           </form>
+
           <!-- Tooltips -->
           <h3 class="mt-5"><b class="group_title">Tooltips</b></h3>
           <form class="needs-validation" novalidate>
