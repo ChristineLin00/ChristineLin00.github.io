@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+  <head lang="en">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christine Lin">
+    <meta name="keywords" content="UI_Train">
+    <meta name="description" content="Hi,this is created by Christine">
+    <link rel="stylesheet" href="./css_9.css">
+    <title>This is Css9|I am Christine</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <a class="navbar-brand" href="#">Showcase</a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <nav class="nav flex-column">
+            <div class="nav-link text-dark navbar-header font-weight-bold">Components</div>
+            <a class="nav-link text-secondary" href="./css_alerts.html">Alerts</a>
+            <a class="nav-link text-secondary" href="./css_badge.html">Badge</a>
+            <a class="nav-link text-secondary" href="./css_breadcrumb.html">Breadcrumb</a>
+            <a class="nav-link active text-dark font-weight-bold" href="./css_button.html">Buttons</a>
+            <a class="nav-link text-secondary" href="./css_button_group.html">Button group</a>
+            <a class="nav-link text-secondary" href="./css_card.html">Card</a>
+            <a class="nav-link text-secondary" href="./css_carousel.html">Carousel</a>
+            <a class="nav-link text-secondary" href="./css_collapse.html">Collapse</a>
+            <a class="nav-link text-secondary" href="./css_dropdowns.html">Dropdowns</a>
+            <a class="nav-link text-secondary" href="./css_forms.html">Forms</a>
+            <a class="nav-link text-secondary" href="./css_input_group.html">Input group</a>
+            <a class="nav-link text-secondary" href="./css_jumbotron.html">Jumbotron</a>
+            <a class="nav-link text-secondary" href="./css_list_group.html">List group</a>
+            <a class="nav-link text-secondary" href="./css_model.html">Model</a>
+            <a class="nav-link text-secondary" href="./css_navs.html">Navs</a>
+            <a class="nav-link text-secondary" href="./css_navbar.html">Navbar</a>
+            <a class="nav-link text-secondary" href="./css_pagination.html">Pagination</a>
+            <a class="nav-link text-secondary" href="./css_popovers.html">Popovers</a>
+            <a class="nav-link text-secondary" href="./css_progress.html">Progress</a>
+            <a class="nav-link text-secondary" href="./css_scrollspy.html">Scrollspy</a>
+            <a class="nav-link text-secondary" href="./css_tooltips.html">Tooltips</a>
+          </nav>
+        </div>
+        <div class="col-10">
+          <h1 class="mb-5"><b id="title">Buttons</b></h1>
+
+          <!-- Examples -->
+          <h3><b id="group_title">Examples</b></h3>
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-light">Light</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+          <button type="button" class="btn btn-link">Link</button>
+
+          <!-- Button tags -->
+          <h3 class="mt-5"><b class="group_title">Button tags</b></h3>
+          <a class="btn btn-primary" href="#" role="button">Link</a>
+          <button class="btn btn-primary" type="submit">Button</button>
+          <input class="btn btn-primary" type="button" value="Input">
+          <input class="btn btn-primary" type="submit" value="Submit">
+          <input class="btn btn-primary" type="reset" value="Reset">
+
+          <!-- Outline buttons -->
+          <h3 class="mt-5"><b class="group_title">Outline buttons</b></h3>
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+          <button type="button" class="btn btn-outline-secondary">Secondary</button>
+          <button type="button" class="btn btn-outline-success">Success</button>
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+          <button type="button" class="btn btn-outline-warning">Warning</button>
+          <button type="button" class="btn btn-outline-info">Info</button>
+          <button type="button" class="btn btn-outline-light">Light</button>
+          <button type="button" class="btn btn-outline-dark">Dark</button>
+
+          <!-- Sizes -->
+          <h3 class="mt-5"><b class="group_title">Sizes</b></h3>
+          <div class="p-3">
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+          </div>
+          <div class="p-3">
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+          </div>
+          <div class="p-3">
+            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+          </div>
+
+          <!-- Active state -->
+          <h3 class="mt-5"><b class="group_title">Active state</b></h3>
+          <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+          <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+
+          <!-- Disabled state -->
+          <h3 class="mt-5"><b class="group_title">Disabled state</b></h3>
+          <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+          <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+          <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link</a>
+          <a href="#" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Link</a>
+
+          <!-- Button plugin -->
+          <h3 class="mt-5"><b class="group_title">Button plugin</b></h3>
+          <!-- Toggle states -->
+          <h5><b class="group_title">Toggle states</b></h5>
+          <div class="p-3">
+            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+              Single toggle
+            </button>
+          </div>
+          <!-- Checkbox and radio buttons -->
+          <h5><b class="group_title">Checkbox and radio buttons</b></h5>
+          <div class="p-3">
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="checkbox" checked autocomplete="off"> Checked
+              </label>
+            </div>
+          </div>
+          <div class="p-3">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

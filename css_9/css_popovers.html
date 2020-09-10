@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+  <head lang="en">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christine Lin">
+    <meta name="keywords" content="UI_Train">
+    <meta name="description" content="Hi,this is created by Christine">
+    <link rel="stylesheet" href="./css_9.css">
+    <title>This is Css9|I am Christine</title>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <a class="navbar-brand" href="#">Showcase</a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <nav class="nav flex-column">
+            <div class="nav-link text-dark navbar-header font-weight-bold">Components</div>
+            <a class="nav-link text-secondary" href="./css_alerts.html">Alerts</a>
+            <a class="nav-link text-secondary" href="./css_badge.html">Badge</a>
+            <a class="nav-link text-secondary" href="./css_breadcrumb.html">Breadcrumb</a>
+            <a class="nav-link text-secondary" href="./css_button.html">Buttons</a>
+            <a class="nav-link text-secondary" href="./css_button_group.html">Button group</a>
+            <a class="nav-link text-secondary" href="./css_card.html">Card</a>
+            <a class="nav-link text-secondary" href="./css_carousel.html">Carousel</a>
+            <a class="nav-link text-secondary" href="./css_collapse.html">Collapse</a>
+            <a class="nav-link text-secondary" href="./css_dropdowns.html">Dropdowns</a>
+            <a class="nav-link text-secondary" href="./css_forms.html">Forms</a>
+            <a class="nav-link text-secondary" href="./css_input_group.html">Input group</a>
+            <a class="nav-link text-secondary" href="./css_jumbotron.html">Jumbotron</a>
+            <a class="nav-link text-secondary" href="./css_list_group.html">List group</a>
+            <a class="nav-link text-secondary" href="./css_model.html">Model</a>
+            <a class="nav-link text-secondary" href="./css_navs.html">Navs</a>
+            <a class="nav-link text-secondary" href="./css_navbar.html">Navbar</a>
+            <a class="nav-link text-secondary" href="./css_pagination.html">Pagination</a>
+            <a class="nav-link active text-dark font-weight-bold" href="./css_popovers.html">Popovers</a>
+            <a class="nav-link text-secondary" href="./css_progress.html">Progress</a>
+            <a class="nav-link text-secondary" href="./css_scrollspy.html">Scrollspy</a>
+            <a class="nav-link text-secondary" href="./css_tooltips.html">Tooltips</a>
+          </nav>
+        </div>
+        <div class="col-10">
+          <h1 class="mb-5"><b id="title">Alerts</b></h1>
+
+          <!-- Example -->
+          <h3><b id="group_title">Example</b></h3>
+          <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
+            data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+            <!-- Four directions -->
+          <h3 class="mt-5"><b class="group_title">Four directions</b></h3>
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top"
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Popover on top
+          </button>
+
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right"
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Popover on right
+          </button>
+
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom"
+            data-content="Vivamus
+          sagittis lacus vel augue laoreet rutrum faucibus.">
+            Popover on bottom
+          </button>
+
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left"
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+            Popover on left
+          </button>
+
+          <!-- Dismiss on next click -->
+          <h3 class="mt-5"><b class="group_title">Dismiss on next click</b></h3>
+          <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus"
+            title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible
+            popover</a>
+
+            <!-- Disabled elements -->
+          <h3 class="mt-5"><b class="group_title">Disabled elements</b></h3>
+          <span class="d-inline-block" data-toggle="popover" data-content="Disabled popover">
+            <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
