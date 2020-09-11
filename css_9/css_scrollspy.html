@@ -10,6 +10,11 @@
     <meta name="description" content="Hi,this is created by Christine">
     <link rel="stylesheet" href="./css_9.css">
     <title>This is Css9|I am Christine</title>
+    <style>
+      body {
+        position: relative;
+      }
+    </style>
   </head>
   <body>
     <script src="../node_modules/jquery/dist/jquery.js"></script>
@@ -51,7 +56,6 @@
         </div>
         <div class="col-10">
           <h1 class="mb-5"><b id="title">Scrollspy</b></h1>
-
           <!-- Example in navbar -->
           <h3><b id="group_title">Example in navbar</b></h3>
           <nav id="navbar-example2" class="navbar navbar-light bg-light">
@@ -75,7 +79,7 @@
               </li>
             </ul>
           </nav>
-          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example"  style="height: 300px; overflow-y: scroll;">
             <h4 id="fat">@fat</h4>
             <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr
               farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf
@@ -133,7 +137,7 @@
               </nav>
             </div>
             <div class="col-8">
-              <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example-2">
+              <div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example-2"  style="height: 300px; overflow-y: scroll;">
                 <h4 id="item-1">Item 1</h4>
                 <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do
                   aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu
@@ -191,7 +195,7 @@
               </div>
             </div>
             <div class="col-8">
-              <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+              <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example"  style="height: 300px; overflow-y: scroll;">
                 <h4 id="list-item-1">Item 1</h4>
                 <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu.
                   Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor
