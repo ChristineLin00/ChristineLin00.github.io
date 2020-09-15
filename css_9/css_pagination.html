@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+
+  <head lang="en">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christine Lin">
+    <meta name="keywords" content="UI_Train">
+    <meta name="description" content="Hi,this is created by Christine">
+    <link rel="stylesheet" href="./css_9.css">
+    <title>This is Css9|I am Christine</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <a class="navbar-brand" href="#">Showcase</a>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <nav class="nav flex-column">
+            <div class="nav-link text-dark navbar-header font-weight-bold">Components</div>
+            <a class="nav-link text-secondary" href="./css_alerts.html">Alerts</a>
+            <a class="nav-link text-secondary" href="./css_badge.html">Badge</a>
+            <a class="nav-link text-secondary" href="./css_breadcrumb.html">Breadcrumb</a>
+            <a class="nav-link text-secondary" href="./css_button.html">Buttons</a>
+            <a class="nav-link text-secondary" href="./css_button_group.html">Button group</a>
+            <a class="nav-link text-secondary" href="./css_card.html">Card</a>
+            <a class="nav-link text-secondary" href="./css_carousel.html">Carousel</a>
+            <a class="nav-link text-secondary" href="./css_collapse.html">Collapse</a>
+            <a class="nav-link text-secondary" href="./css_dropdowns.html">Dropdowns</a>
+            <a class="nav-link text-secondary" href="./css_forms.html">Forms</a>
+            <a class="nav-link text-secondary" href="./css_input_group.html">Input group</a>
+            <a class="nav-link text-secondary" href="./css_jumbotron.html">Jumbotron</a>
+            <a class="nav-link text-secondary" href="./css_list_group.html">List group</a>
+            <a class="nav-link text-secondary" href="./css_modal.html">Modal</a>
+            <a class="nav-link text-secondary" href="./css_navs.html">Navs</a>
+            <a class="nav-link text-secondary" href="./css_navbar.html">Navbar</a>
+            <a class="nav-link active text-dark font-weight-bold" href="./css_pagination.html">Pagination</a>
+            <a class="nav-link text-secondary" href="./css_popovers.html">Popovers</a>
+            <a class="nav-link text-secondary" href="./css_progress.html">Progress</a>
+            <a class="nav-link text-secondary" href="./css_scrollspy.html">Scrollspy</a>
+            <a class="nav-link text-secondary" href="./css_spinners.html">Spinners</a>
+            <a class="nav-link text-secondary" href="./css_toasts.html">Toasts</a>
+            <a class="nav-link text-secondary" href="./css_tooltips.html">Tooltips</a>
+          </nav>
+        </div>
+        <div class="col-10">
+          <h1 class="mb-5"><b id="title">Pagination</b></h1>
+
+          <!-- Overview -->
+          <h3><b id="group_title">Overview</b></h3>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+
+          <!-- Working with icons -->
+          <h3 class="mt-5"><b class="group_title">Working with icons</b></h3>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Disabled and active states -->
+          <h3 class="mt-5"><b class="group_title">Disabled and active states</b></h3>
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav aria-label="...">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <span class="page-link">Previous</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <span class="page-link">
+                  2
+                  <span class="sr-only">(current)</span>
+                </span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Sizing -->
+          <h3 class="mt-5"><b class="group_title">Sizing</b></h3>
+          <nav aria-label="...">
+            <ul class="pagination pagination-lg">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+          </nav>
+
+          <nav aria-label="...">
+            <ul class="pagination pagination-sm">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+          </nav>
+
+          <!-- Alignment -->
+          <h3 class="mt-5"><b class="group_title">Alignment</b></h3>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
