@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+  <head lang="en">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="author" content="Christine Lin">
+    <meta name="keywords" content="UI_Train">
+    <meta name="description" content="Hi,this is created by Christine">
+    <link rel="stylesheet" href="./scss_1.css">
+    <title>This is Scss1|I am Christine</title>
+  </head>
+  <body>
+    <nav style="text-align: right;"> |
+      <a href="../index.html">Home</a> |
+      <a href="https://github.com/ChristineLin00/ChristineLin00.github.io">github</a> |
+    </nav>
+    <table align="center">
+      <tr>
+        <th>名稱</th>
+        <th>Sass</th>
+        <th>Scss</th>
+        <th>Less</th>
+        <th>Stylus</th>
+      </tr>
+      <tr>
+        <th>檔案命名</th>
+        <td>.sass</td>
+        <td>.scss</td>
+        <td>.less</td>
+        <td>.styl</td>
+      </tr>
+      <tr>
+        <th>語法</th>
+        <td>
+          Sass不需括號以及分號，改以斷行縮排的方式<br>
+          <code>
+            h1<br>
+            &nbsp;&nbsp;color: #0982C1
+          </code>
+      </td>
+        <td>
+          與Sass差異在於需要有括號和分號。<br>
+          <code>
+            h1 { <br>
+            &nbsp;&nbsp;color: #0982C1;<br>
+            }
+          </code>
+        </td>
+        <td>
+          與Scss一致<br>
+          <code>
+            h1 { <br>
+            &nbsp;&nbsp;color: #0982C1; <br>
+            }
+          </code>
+        </td>
+        <td>
+          Stylus 支援的語法較多樣，可支援上述三種方法外，亦可刪除括弧保留分號，並在同份文件混合一起使用<br>
+          <code>
+            h1 <br>
+            &nbsp;&nbsp;color: #0982C1; <br>
+          </code>
+        </pre></td>
+      </tr>
+      <tr>
+        <th>變數</th>
+        <td>
+          以 $ 做為開頭，以冒號隔開變量名稱及賦值<br>
+          <code>
+            $mainColor: #0982c1<br>
+            $siteWidth: 1024px<br>
+            $borderStyle: dotted<br>
+
+            body<br>
+            &nbsp;&nbsp;color: $mainColor<br>
+            &nbsp;&nbsp;border: 1px $borderStyle $mainColor<br>
+            &nbsp;&nbsp;max-width: $siteWidth
+          </code>
+        </td>
+        <td>
+          與Sass差異在於需要有括號和分號。
+          <code>
+            $mainColor: #0982c1;<br>
+            $siteWidth: 1024px;<br>
+            $borderStyle: dotted;<br>
+
+            body {<br>
+            &nbsp;&nbsp;color: $mainColor;<br>
+            &nbsp;&nbsp;border: 1px $borderStyle $mainColor;<br>
+            &nbsp;&nbsp;max-width: $siteWidth;
+            }
+          </code>
+        </td>
+        <td>
+          以 @ 做為開頭，以冒號隔開變量名稱及賦值<br>
+          <code>
+            @mainColor: #0982c1;<br>
+            @siteWidth: 1024px;<br>
+            @borderStyle: dotted;<br>
+
+            body {<br>
+            &nbsp;&nbsp;color: @mainColor;<br>
+            &nbsp;&nbsp;border: 1px @borderStyle @mainColor;<br>
+            &nbsp;&nbsp;max-width: @siteWidth;<br>
+            }
+          </code>
+        </td>
+        <td>
+          開頭可以是任意符號，但不能用@做為開頭<br>
+          變量名稱及賦值之間可以用冒號或空格等隔開<br>
+
+          <code>
+            mainColor = #0982c1<br>
+            siteWidth = 1024px<br>
+            $borderStyle = dotted<br>
+
+            body<br>
+            &nbsp;&nbsp;color mainColor<br>
+            &nbsp;&nbsp;border 1px $borderStyle mainColor<br>
+            &nbsp;&nbsp;max-width siteWidth<br>
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th>巢狀結構</th>
+        <td>
+          可利用縮排撰寫巢狀結構<br>
+          <code>
+            section<br>
+            &nbsp;&nbsp;margin: <br>
+
+            &nbsp;&nbsp;nav<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;height: 25px<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;a<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #0982C1<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;:hover<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: underline
+          </code>
+        </td>
+        <td>
+          與Sass差異在於需要有括號和分號。<br>
+          <code>
+            section {<br>
+            &nbsp;&nbsp;margin: 10px;<br>
+
+            &nbsp;&nbsp;nav {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;height: 25px;<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;a {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #0982C1;<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;:hover {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: underline;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;}<br>
+            }
+          </code>
+        </td>
+        <td>
+          同 Scss<br>
+          <code>
+            section {<br>
+            &nbsp;&nbsp;margin: 10px;<br>
+
+            &nbsp;&nbsp;nav {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;height: 25px;<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;a {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #0982C1;<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;:hover {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: underline;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;}<br>
+            }
+          </code>
+        </td>
+        <td>
+          同 Sass和Scss<br>
+          <code>
+            section {<br>
+            &nbsp;&nbsp;margin: 10px;<br>
+
+            &nbsp;&nbsp;nav {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;height: 25px;<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;a {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #0982C1;<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;:hover {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: underline;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            &nbsp;&nbsp;}<br>
+            }
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th>Mixins(混入)</th>
+        <td>
+          以@定義 Mixins 寫法再利用 @include 引入<br>
+          <code>
+            @mixin error($borderWidth: 2px)<br>
+            &nbsp;&nbsp;border: $borderWidth solid #F00<br>
+            &nbsp;&nbsp;color: #F00<br>
+
+            .generic-error<br>
+            &nbsp;&nbsp;padding: 20px<br>
+            &nbsp;&nbsp;margin: 4px<br>
+            &nbsp;&nbsp;@ include error()<br>
+
+            .login-error<br>
+            &nbsp;&nbsp;left: 12px<br>
+            &nbsp;&nbsp;position: absolute<br>
+            &nbsp;&nbsp;top: 20px<br>
+            &nbsp;&nbsp;@ include error(5px);
+          </code>
+        </td>
+        <td>
+          與Sass差異在於需要有括號和分號。<br>
+          <code>
+            @mixin error($borderWidth: 2px) {<br>
+            &nbsp;&nbsp;border: $borderWidth solid #F00;<br>
+            &nbsp;&nbsp;color: #F00;<br>
+            }<br>
+
+            .generic-error {<br>
+            &nbsp;&nbsp;padding: 20px;<br>
+            &nbsp;&nbsp;margin: 4px;<br>
+            &nbsp;&nbsp;@ include error();<br>
+            }<br>
+
+            .login-error {<br>
+            &nbsp;&nbsp;left: 12px;<br>
+            &nbsp;&nbsp;position: absolute;<br>
+            &nbsp;&nbsp;top: 20px;<br>
+            &nbsp;&nbsp;@ include error(5px);<br>
+            }
+          </code>
+        </td>
+        <td>
+          以 . 開頭定義及引入 Mixins 寫法<br>
+          <code>
+            .error($borderWidth: 2px) {<br>
+            &nbsp;&nbsp;border: $borderWidth solid #F00;<br>
+            &nbsp;&nbsp;color: #F00;<br>
+            }<br>
+
+            .generic-error {<br>
+            &nbsp;&nbsp;padding: 20px;<br>
+            &nbsp;&nbsp;margin: 4px;<br>
+            &nbsp;&nbsp;.error();<br>
+            }<br>
+
+            .login-error {<br>
+            &nbsp;&nbsp;left: 12px;<br>
+            &nbsp;&nbsp;position: absolute;<br>
+            &nbsp;&nbsp;top: 20px;<br>
+            &nbsp;&nbsp;.error(5px);<br>
+            }
+          </code>
+        </td>
+        <td>
+          不需利用特別符號開頭，直接引入<br>
+          <code>
+            error($borderWidth: 2px) {<br>
+            &nbsp;&nbsp;border: $borderWidth solid #F00;<br>
+            &nbsp;&nbsp;color: #F00;<br>
+            }<br>
+
+            .generic-error {<br>
+            &nbsp;&nbsp;padding: 20px;<br>
+            &nbsp;&nbsp;margin: 4px;<br>
+            &nbsp;&nbsp;error();<br>
+            }<br>
+
+            .login-error {<br>
+            &nbsp;&nbsp;left: 12px;<br>
+            &nbsp;&nbsp;position: absolute;<br>
+            &nbsp;&nbsp;top: 20px;<br>
+            &nbsp;&nbsp;error(5px);<br>
+            }
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th>繼承</th>
+        <td>
+          利用 @extend 引入<br>
+          <code>
+            .block<br>
+            &nbsp;&nbsp;margin: 10px 5px<br>
+            &nbsp;&nbsp;padding: 2px<br>
+
+            p<br>
+            &nbsp;&nbsp;@extend .block<br>
+            &nbsp;&nbsp;border: 1px solid #EEE<br>
+
+            ul, ol<br>
+            &nbsp;&nbsp;@extend .block<br>
+            &nbsp;&nbsp;color: #333<br>
+            &nbsp;&nbsp;text-transform: uppercase
+          </code>
+        </td>
+        <td>
+          與Sass差異在於需要有括號和分號。<br>
+          <code>
+            .block {<br>
+            &nbsp;&nbsp;margin: 10px 5px;<br>
+            &nbsp;&nbsp;padding: 2px;<br>
+            }<br>
+
+            p {<br>
+            &nbsp;&nbsp;@extend .block;<br>
+            &nbsp;&nbsp;border: 1px solid #EEE;<br>
+            }<br>
+
+            ul, ol {<br>
+            &nbsp;&nbsp;@extend .block;<br>
+            &nbsp;&nbsp;color: #333;<br>
+            &nbsp;&nbsp;text-transform: uppercase;<br>
+            }
+          </code>
+        </td>
+        <td>
+          None
+        </td>
+        <td>
+          同Sass和Scss，利用 @extend<br>
+          <code>
+            .block {<br>
+            &nbsp;&nbsp;margin: 10px 5px;<br>
+            &nbsp;&nbsp;padding: 2px;<br>
+            }<br>
+
+            p {<br>
+            &nbsp;&nbsp;@extend .block;<br>
+            &nbsp;&nbsp;border: 1px solid #EEE;<br>
+            }<br>
+
+            ul, ol {<br>
+            &nbsp;&nbsp;@extend .block;<br>
+            &nbsp;&nbsp;color: #333;<br>
+            &nbsp;&nbsp;text-transform: uppercase;<br>
+            }
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <th>運算式</th>
+        <td>
+          可利用加減乘除等運算符號計算<br>
+
+          <code>
+            .container<br>
+            width: 100%<br>
+
+            article[role="main"]<br>
+            float: left<br>
+            width: 600px / 960px * 100%<br>
+
+            aside[role="complementary"]<br>
+            float: right<br>
+            width: 300px / 960px * 100%<br>
+          </code>
+        </td>
+        <td>
+          與Sass差異在於需要有括號和分號。<br>
+          <code>
+            .container {<br>
+            &nbsp;&nbsp;width: 100%;<br>
+            }<br>
+
+            article[role="main"] {<br>
+            &nbsp;&nbsp;float: left;<br>
+            &nbsp;&nbsp;width: 600px / 960px * 100%;<br>
+            }<br>
+
+            aside[role="complementary"] {<br>
+            &nbsp;&nbsp;float: right;<br>
+            &nbsp;&nbsp;width: 300px / 960px * 100%;<br>
+            }
+          </code>
+        </td>
+        <td>
+          同Sass<br>
+          <code>
+            .block {<br>
+            &nbsp;&nbsp;margin: 10px 5px;<br>
+            &nbsp;&nbsp;padding: 2px;<br>
+            }<br>
+
+            p {<br>
+            &nbsp;&nbsp;@extend .block;<br>
+            &nbsp;&nbsp;border: 1px solid #EEE;<br>
+            }<br>
+
+            ul, ol {<br>
+            &nbsp;&nbsp;@extend .block;<br>
+            &nbsp;&nbsp;color: #333;<br>
+            &nbsp;&nbsp;text-transform: uppercase;<br>
+            }
+          </code>
+        </td>
+        <td>
+          同Sass和Scss<br>
+          <code>
+            .block {<br>
+            &nbsp;&nbsp;margin: 10px 5px;<br>
+            &nbsp;&nbsp;padding: 2px;<br>
+            }<br>
+
+            p {<br>
+            &nbsp;&nbsp;@extend .block;<br>
+            &nbsp;&nbsp;border: 1px solid #EEE;<br>
+            }<br>
+
+            ul, ol {<br>
+            &nbsp;&nbsp;@extend .block;<br>
+            &nbsp;&nbsp;color: #333;<br>
+            &nbsp;&nbsp;text-transform: uppercase;<br>
+            }
+          </code>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          整體而言，SASS 以及 SCSS 主要差異在於一個利用縮排的方式撰寫，一個利用括號以及分號進行處理，而 Stylus 涵蓋範圍比較大，可以吃的形式也比較多元。<br>
+          LESS 是由 Alexis Sellier 所設計的工具，原本是用 Ruby 實作，用來將 LESS 語法轉換成 CSS 語言。SASS (Syntactically Awesome Stylesheets) 是由 Hampton
+          Catlin 設計，然後由 Natalie Weizenbaum 實作的一種樣式語言。LESS 與 JavaScript 一樣，有用 {...} 的大括號框起來，而 SASS 則像 Python
+          一樣，沒有用大括號，而是透過換行與縮排來表現這種層次結構。SASS 另一個變種是加上大括號的版本，稱為 SCSS，這兩種風格可以互相轉換，可依照習慣挑選使用。
+        </td>
+      </tr>
+    </table>
+   </body>
+</html>
