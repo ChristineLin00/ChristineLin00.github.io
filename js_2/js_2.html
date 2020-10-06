@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head lang="en">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="author" content="Christine Lin">
+    <meta name="keywords" content="UI_Train">
+    <meta name="description" content="Hi,this is created by Christine">
+    <link rel="stylesheet" href="./js_2.css">
+    <title>This is javascript_practice_2 |I am Christine</title>
+  </head>
+  <body>
+    <input type="text" id="input" name="Date" value="2020, 1, 1"><br><br>
+    <button type="button" onclick="ISOdate()">Try it</button>
+    <p id="ans"></p>
+    <script>
+      Date.prototype.addHours = function (h) {
+        this.setHours(this.getHours() + h);
+        return this;
+      }
+
+      function StringToISODate(Year, Month, Day) {
+        return new Date(Year, Month-1, Day).addHours(8).toISOString().split('T')[0];
+      }
+
+      function ISOdate(){
+        var input_date = document.getElementById("input").value.split(',');
+        var someday = StringToISODate(input_date[0], input_date[1], input_date[2]);
+        return  document.getElementById("ans").innerHTML = someday;
+      }
+    </script>
+
+  </body>
+</html>
