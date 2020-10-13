@@ -24,9 +24,9 @@ console.log(sort_array2(input_arr));
 
 // function 2 : sort the object
 function sort_obj(input) {
-  let asc_age = input.sort((a, b) => b.age - a.age);
-  let des_sex = asc_age.sort((a, b) => a.sex.localeCompare(b.sex));
-  return des_sex;
+  let des_age = input.sort((a, b) => b.age - a.age);
+  let asc_sex = des_age.sort((a, b) => a.sex.localeCompare(b.sex));
+  return asc_sex;
 }
 
 function sort_obj2(input) {
