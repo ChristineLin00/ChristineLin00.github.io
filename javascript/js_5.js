@@ -1,5 +1,5 @@
 function which_max_2(a, b) {
-  return (a > b? a: b);
+  return (a > b ? a: b);
 }
 
 function which_max_3(a, b, c) {
@@ -7,7 +7,7 @@ function which_max_3(a, b, c) {
 }
 
 function which_max_3_(a, b, c) {
-  return ((a > b && a > c)? a :(b > c)? b : c);
+  return ((a > b && a > c) ? a :(b > c) ? b : c);
 }
 
 console.log(which_max_2(5, -1));

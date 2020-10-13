@@ -2,7 +2,7 @@ function numeric_sum(obj) {
   let values = Object.values(obj);
   // numeric sum
   let ans_numeric = values.reduce(function (total, value) {
-    if (typeof value == "number") {
+    if (typeof value == 'number') {
       return total + value;
     } else {
       return total;
@@ -10,7 +10,7 @@ function numeric_sum(obj) {
   }, 0);
   // int_sum
   let ans_int = values.reduce(function (total, value) {
-    if (typeof value == "number" && value % 1 == 0) {
+    if (typeof value == 'number' && value % 1 == 0) {
       return total + value;
     } else {
       return total;

@@ -13,41 +13,41 @@ function getMean(arr) {
   return mean;
 }
 
-function getMedian(arr) {
-  // sort the array
-  let arr_sort = arr.sort(function (a, b) {
-    return a - b;
-  });
-  // odd or even
-  if (arr.length % 2 != 0) {
-    median = arr_sort[(arr.length - 1) * 0.5];
-  } else {
-    median =
-      (arr_sort[arr.length * 0.5] + arr_sort[arr.length * 0.5 + 1]) * 0.5;
+function getQuantile(arr, p) {
+  if (arr.length == 1){
+    return arr[0]
+  }else{
+    // sort the array
+    let arr_sort = arr.sort(function (a, b) {
+      return a - b;
+    });
+    index = (arr.length - 1) * p;
+    integer = Math.floor(index);
+    fraction = index - integer;
+    value =
+      arr_sort[integer] + (arr_sort[integer + 1] - arr_sort[integer]) * fraction;
+    return value;
   }
-  let Q_1 = arr_sort[Math.round(arr.length * 0.25)];
-  let Q_3 = arr_sort[Math.round(arr.length * 0.75)];
-  return {median: Math.round(median * 100) / 100, Q1: Q_1, Q3: Q_3 }
 }
 
 function getVariance(arr) {
   let variance = getMean(arr.map((x) => Math.pow(x - getMean(arr), 2)));
-  let sd = Math.sqrt(variance)
-  return {variance: variance, sd: sd}
+  let sd = Math.sqrt(variance);
+  return {variance: variance, sd: sd};
 }
 
 function getDescription(arr) {
   let ans_description = new Object();
-  let title_names = ["max", "min", "mean", "median", "Q1", "Q3", "variance", "sd"]
+  let title_names = ['max', 'min', 'mean', 'median', 'Q1', 'Q3', 'variance', 'sd'];
   title_names.map((x) => (ans_description[x] = null));
 
   if (arr.length > 0) {
     ans_description.max = Math.max.apply(null, arr);
     ans_description.min = Math.min.apply(null, arr);
     ans_description.mean = getMean(arr);
-    ans_description.median = getMedian(arr).median;
-    ans_description.Q1 = getMedian(arr).Q1;
-    ans_description.Q3 = getMedian(arr).Q3;
+    ans_description.median = getQuantile(arr, 0.5);
+    ans_description.Q1 = getQuantile(arr, 0.25);
+    ans_description.Q3 = getQuantile(arr, 0.75);
     ans_description.variance = getVariance(arr).variance;
     ans_description.sd = getVariance(arr).sd;
   }
@@ -57,4 +57,3 @@ function getDescription(arr) {
 // let test_array = [1, 2, 3, 4, 8, 5, 60, 112];
 let test_array = [];
 console.log(getDescription(test_array));
-
