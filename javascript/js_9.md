@@ -1,6 +1,4 @@
-<pre>
-Object -> class, new class
-</pre>
+# Object -> class, new class
 
 ```javascript
 function Person (){
@@ -38,9 +36,10 @@ console.log(john_noNew);
 console.log(john_noNew.getFullName());
 //TypeError: Cannot read property 'getFullName' of undefined
 ```
-<pre>
-function invocation 差別 (), apply(), call(), bind()
-</pre>
+
+----
+
+# function invocation 差別 (), apply(), call(), bind()
 
 ![js_invoke](./img/functionInvoke.PNG "invoke")
 * apply() 語法和call() 幾乎一樣，最大的不同是 call() 接受一連串的參數，而 apply() 接受一組陣列形式的參數。
