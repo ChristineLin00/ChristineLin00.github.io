@@ -26,4 +26,18 @@ function getUnique_insensitive2(arr) {
   }
   return arr;
 }
+
 console.log(getUnique_insensitive2(input_list));
+
+// from Alwin
+function getGroup(arr) {
+  let groups = {};
+  arr.forEach((item, index) => {
+    let lowcase = item.toLowerCase();
+    groups[lowcase] = groups[lowcase] || [];
+    groups[lowcase].push(item);
+  });
+  return Object.entries(groups).map(([key, value]) => (value[0]));
+}
+
+console.log(getGroup(input_list));
